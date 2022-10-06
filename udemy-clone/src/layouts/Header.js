@@ -16,7 +16,7 @@ function Header() {
                 <div>
                     <button style={{ position: 'relative', width: "110px", height: "72px" }} className='peer bg-white hidden text-sm md:block'><h3 style={{ height: "72px", marginTop: "27px" }} className='hover:text-[#5624d0]'>Categories</h3> </button>
                     {/* <!-- the menu here --> */}
-                    <div style={{ position: 'absolute', marginTop: '4px',zIndex:1010}} class="hidden peer-hover:flex hover:flex
+                    <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} class="hidden peer-hover:flex hover:flex
                     w-[200px] text-left
                     flex-col bg-white drop-shadow-lg">
                         <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Development</a>
@@ -44,7 +44,7 @@ function Header() {
                     <button style={{ position: 'relative', width: "110px", height: "72px" }} className='peer bg-white hidden text-sm lg:block'>
                         <h3 style={{ height: "72px", marginTop: "27px" }} className='hover:text-[#5624d0]'>Udemy Business</h3>
                     </button>
-                    <div style={{ position: 'absolute', marginTop: '4px', zIndex:1010 }} class="hidden peer-hover:flex hover:flex
+                    <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} class="hidden peer-hover:flex hover:flex
                     w-[250px]
                     flex-col bg-white drop-shadow-lg">
                         <div style={{ margin: '4px' }}>
@@ -59,7 +59,7 @@ function Header() {
                     <button style={{ position: 'relative', width: "110px", height: "72px" }} className='peer bg-white hidden text-sm lg:block'>
                         <h3 style={{ height: "72px", marginTop: "27px" }} className='hover:text-[#5624d0]'>Teach on Udemy</h3>
                     </button>
-                    <div style={{ position: 'absolute', marginTop: '4px', zIndex:1010 }} class="hidden peer-hover:flex hover:flex
+                    <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} class="hidden peer-hover:flex hover:flex
                     w-[250px]
                     flex-col bg-white drop-shadow-lg">
                         <div style={{ margin: '4px' }}>
@@ -78,7 +78,7 @@ function Header() {
                         <button style={{ position: 'relative', height: "72px" }} className='peer'>
                             <ShoppingCartIcon className='h-6 w-6 hover:text-[#5624d0]' />
                         </button>
-                        <div style={{ position: 'absolute', marginTop: '4px', zIndex:1010 }} class="hidden peer-hover:flex hover:flex
+                        <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} class="hidden peer-hover:flex hover:flex
                     w-[250px]
                     flex-col bg-white drop-shadow-lg">
                             <div style={{ margin: '4px' }}>
