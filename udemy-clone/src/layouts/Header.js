@@ -34,11 +34,11 @@ function Header() {
                         <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Teaching &#38; Academics</a>
                     </div>
                 </div>
-                <form className='hidden bg-[#f8fafb] md:flex border-black rounded-3xl flex-1 h-12 items-center'>
+                <form className='hidden bg-[#f8fafb] border md:flex border-black rounded-3xl flex-1 h-12 items-center'>
                     <button>
                         <SearchIcon placeholder="Search for anything" className='h-5 w-5 mx-4 text-gray-400' />
                     </button>
-                    <input className='bg-transparent text-sm ouline' type="text" placeholder="Search for anything"></input>
+                    <input className='bg-transparent text-sm outline-0' type="text" placeholder="Search for anything"></input>
                 </form>
                 <div>
                     <button style={{ position: 'relative', width: "110px", height: "72px" }} className='peer bg-white hidden text-sm lg:block'>
@@ -91,7 +91,7 @@ function Header() {
                     </div>
                 </div>
                 <div className='hidden md:flex pr-4 space-x-4 justify-end'>
-                    <button className='border border-black h-10 text-sm font0bold w-20 hover:bg-[#f5f5f5]'>Log in</button>
+                    <button className='border border-black h-10 text-sm font-bold w-20 hover:bg-[#f5f5f5]'>Log in</button>
                     <button className='border bg-black text-white border-black h-10 text-sm font-bold w-20'>Sign up</button>
                     <button className='border border-black w-10 flex items-center justify-center hover:bg-[#f5f5f5]'>
                         <GlobeAltIcon className='h-5 w-5' />

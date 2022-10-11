@@ -2,8 +2,17 @@ import React from "react";
 import { useEffect,useState } from "react";
 import { learn } from "../service/data";
 import Learn from "./Learn";
+import {MdChevronLeft,MdChevronRight} from 'react-icons/md'
 
 function Learns() {
+    const sliderLeft = ()=> {
+        var slider =document.getElementById('slider1')
+        slider.scrollLeft =slider.scrollLeft-500
+    };
+    const sliderRight = ()=> {
+        var slider =document.getElementById('slider1')
+        slider.scrollLeft =slider.scrollLeft+500
+    }
     const [learns, setLearn]=useState([]);
     useEffect(()=>{
         learn().then(items=>{
@@ -34,12 +43,16 @@ function Learns() {
                 <div >
                     <h2 className="text-2xl font-bold">Students are viewing</h2>
                 </div>
-                <div className="w-full flex gap-5 flex-wrap lg:float-none items-center justify-center">
+                <div className="relative flex items-center w-full">
+                    <MdChevronLeft className="opacity-50 cursor-pointer hover:opacity-100 mb-24" onClick={sliderLeft} size={40}/>
+                    <div id="slider1" className="scrollbar-hide gap-5 items-center flex w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth duration-300">
                     {learns.map(item =>
-                        <div style={{width:"230px"}} className="h-60 w-50" key={item.id}>
+                        <div style={{width:"220px"}} className="inline-block" key={item.id}>
                             <Learn item={item}/>
                         </div>
                         )}
+                </div>
+                <MdChevronRight className="opacity-50 cursor-pointer hover:opacity-100 mb-24" onClick={sliderRight} size={40}/>
                 </div>
             </div>
         </div>

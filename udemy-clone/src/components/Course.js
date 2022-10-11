@@ -3,7 +3,7 @@ import {StarIcon} from "@heroicons/react/solid"
 
 function Course({item}){
     return(
-        <div className="flex flex-col items-start space-y[1px]">
+        <div className="w-[210px] flex flex-col items-start space-y[1px]">
             <img src={item.image} alt="imgCoures" className="h-32 w-full"/>
             <h2 className="font-bold text-md pt-1">{item.title}</h2>
             <h2 className="text-xs text-gray-700">{item.username}</h2>

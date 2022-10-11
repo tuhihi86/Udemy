@@ -5,6 +5,7 @@ import Courses from "../components/Courses";
 import Footer from '../layouts/Footer'
 import Learns from "../components/Learns";
 import Categories from "../components/Categories";
+import Feed from "../components/Feed";
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <Courses />
             <Learns />
             <Categories />
+            <Feed />
             <Footer />
         </div>
     )
