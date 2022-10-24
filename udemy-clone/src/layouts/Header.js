@@ -16,22 +16,22 @@ function Header() {
                 <div>
                     <button style={{ position: 'relative', width: "110px", height: "72px" }} className='peer bg-white hidden text-sm md:block'><h3 style={{ height: "72px", marginTop: "27px" }} className='hover:text-[#5624d0]'>Categories</h3> </button>
                     {/* <!-- the menu here --> */}
-                    <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} class="hidden peer-hover:flex hover:flex
+                    <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} className="hidden peer-hover:flex hover:flex
                     w-[200px] text-left
                     flex-col bg-white drop-shadow-lg">
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Development</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Business</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Finance &#38; Accounting</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">IT &#38; Software</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Office productivity</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Personal Development</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Design</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Marketing</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Lifestyle</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Photography &#38; Video</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Health &#38; Fitness</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Music</a>
-                        <a class="px-5 py-2 hover:text-[#5624d0]" href="#">Teaching &#38; Academics</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Development</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Business</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Finance &#38; Accounting</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">IT &#38; Software</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Office productivity</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Personal Development</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Design</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Marketing</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Lifestyle</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Photography &#38; Video</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Health &#38; Fitness</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Music</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Teaching &#38; Academics</a>
                     </div>
                 </div>
                 <form className='hidden bg-[#f8fafb] border md:flex border-black rounded-3xl flex-1 h-12 items-center'>
@@ -44,7 +44,7 @@ function Header() {
                     <button style={{ position: 'relative', width: "110px", height: "72px" }} className='peer bg-white hidden text-sm lg:block'>
                         <h3 style={{ height: "72px", marginTop: "27px" }} className='hover:text-[#5624d0]'>Udemy Business</h3>
                     </button>
-                    <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} class="hidden peer-hover:flex hover:flex
+                    <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} className="hidden peer-hover:flex hover:flex
                     w-[250px]
                     flex-col bg-white drop-shadow-lg">
                         <div style={{ margin: '4px' }}>
@@ -59,7 +59,7 @@ function Header() {
                     <button style={{ position: 'relative', width: "110px", height: "72px" }} className='peer bg-white hidden text-sm lg:block'>
                         <h3 style={{ height: "72px", marginTop: "27px" }} className='hover:text-[#5624d0]'>Teach on Udemy</h3>
                     </button>
-                    <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} class="hidden peer-hover:flex hover:flex
+                    <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} className="hidden peer-hover:flex hover:flex
                     w-[250px]
                     flex-col bg-white drop-shadow-lg">
                         <div style={{ margin: '4px' }}>
@@ -78,7 +78,7 @@ function Header() {
                         <button style={{ position: 'relative', height: "72px" }} className='peer'>
                             <ShoppingCartIcon className='h-6 w-6 hover:text-[#5624d0]' />
                         </button>
-                        <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} class="hidden peer-hover:flex hover:flex
+                        <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} className="hidden peer-hover:flex hover:flex
                     w-[250px]
                     flex-col bg-white drop-shadow-lg">
                             <div style={{ margin: '4px' }}>

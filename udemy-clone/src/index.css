@@ -6,6 +6,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.tran{
+  transition: 600ms cubic-bezier(.2,0,.38,.9)
+}
+.filterne{
+  width: 0 !important;
+  display: none;
+}
+.filterne1{
+  width: 100% !important;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
