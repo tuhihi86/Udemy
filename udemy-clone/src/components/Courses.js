@@ -2,7 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Course from "./Course";
 import { data } from "../service/data";
-import {MdChevronLeft,MdChevronRight} from 'react-icons/md'
+import {MdChevronLeft,MdChevronRight} from 'react-icons/md';
+import {  NavLink } from "react-router-dom";
 
 function Courses() {
     const sliderLeft = ()=> {
@@ -44,7 +45,9 @@ function Courses() {
                 <div id="slider" className="scrollbar-hide gap-5 items-center flex w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth duration-300">
                     {courses.map(item =>
                         <div className="w-[210px] inline-block" key={item.id}>
+                            <NavLink to="courseDetail">
                             <Course item={item} />
+                            </NavLink>
                         </div>
                     )}
                 </div>

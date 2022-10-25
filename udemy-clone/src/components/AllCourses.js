@@ -1,10 +1,11 @@
 import React from "react";
 import { data } from "../service/data";
 import { useEffect, useState } from "react";
-import {StarIcon} from "@heroicons/react/solid"
+import { StarIcon } from "@heroicons/react/solid"
 
 const AllCourses = () => {
     const [clicked, setClicked] = useState(1);
+    const [clicked1, setClicked1] = useState(1);
     const [courses, setCourses] = useState([]);
     useEffect(() => {
         data().then(items => {
@@ -55,10 +56,59 @@ const AllCourses = () => {
             </div>
             <div className={` w-[1258px] flex flex-row ${clicked ? "" : "tran"}`}>
                 <div className={` w-[280px] mr-4 ${clicked ? "" : "filterne"}`}>
-                    <div className="border border-l-0 border-r-0 h-[55px] py-4 w-[240px] flex items-center justify-between">
-                        <h2 className="font-bold text-[19px]">Ratings</h2>
-                        <div className="flex items-center justify-center cursor-pointer ">
-                            <img src="https://static.thenounproject.com/png/1123247-200.png" alt="" className="w-5 h-5" />
+                    <div className="border border-l-0 border-r-0 w-[240px]">
+                        <div className="flex flex-row h-[55px] w-[240px] items-center justify-between">
+                            <h2 className="font-bold text-[19px]">Ratings</h2>
+                            <div className="flex items-center justify-center cursor-pointer" onClick={
+                            () => {
+                                setClicked1(!clicked1)
+                            }
+                        }>
+                                <img src="https://static.thenounproject.com/png/1123247-200.png" alt="" className="w-5 h-5" />
+                            </div>
+                        </div>
+                        <div className={`${clicked1 ? "h-[144px] w-[240px]" : "h-0 w-[240px] hidden"}`}>
+                            <div className="flex items-center mb-4">
+                                <input id="default-checkbox" type="radio" value="" className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                <label for="default-checkbox" className="ml-2 text-sm font-medium flex flex-row items-center text-gray-900 dark:text-gray-300">
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <img src="https://spng.pngfind.com/pngs/s/536-5360734_half-star-icon-white-hd-png-download.png" alt="" className="h-[12px] w-[12px]" />
+                                    4.5 &amp; up (434)</label>
+                            </div>
+                            <div className="flex items-center mb-4">
+                                <input checked="" id="checked-checkbox" type="radio" value="" className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                <label for="checked-checkbox" className="ml-2 text-sm font-medium flex flex-row items-center text-gray-900 dark:text-gray-300">
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <img src="https://toppng.com/uploads/preview/yellow-star-border-frame-png-11546682563dxn24bwljg.png" alt="" className="h-[12px] w-[12px]" />
+                                    4.0 &amp; up (796)</label>
+                            </div>
+                            <div className="flex items-center mb-4">
+                                <input checked="" id="checked-checkbox" type="radio" value="" className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                <label for="checked-checkbox" className="ml-2 text-sm font-medium flex flex-row items-center text-gray-900 dark:text-gray-300">
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <img src="https://spng.pngfind.com/pngs/s/536-5360734_half-star-icon-white-hd-png-download.png" alt="" className="h-[12px] w-[12px]" />
+                                    <img src="https://toppng.com/uploads/preview/yellow-star-border-frame-png-11546682563dxn24bwljg.png" alt="" className="h-[12px] w-[12px]" />
+                                    3.5 &amp; up (977)</label>
+                            </div>
+                            <div className="flex items-center mb-4">
+                                <input checked="" id="checked-checkbox" type="radio" value="" className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                <label for="checked-checkbox" className="ml-2 text-sm font-medium flex flex-row items-center text-gray-900 dark:text-gray-300">
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <StarIcon className="w-4 text-[#db9b0e]" />
+                                    <img src="https://toppng.com/uploads/preview/yellow-star-border-frame-png-11546682563dxn24bwljg.png" alt="" className="h-[12px] w-[12px]" />
+                                    <img src="https://toppng.com/uploads/preview/yellow-star-border-frame-png-11546682563dxn24bwljg.png" alt="" className="h-[12px] w-[12px]" />
+                                    3.0 &amp; up (1,021)</label>
+                            </div>
+
                         </div>
                     </div>
                     <div className="border border-l-0 border-r-0 border-t-0 h-[55px] py-4 w-[240px] flex items-center justify-between">
@@ -74,42 +124,42 @@ const AllCourses = () => {
                         </div>
                     </div>
                 </div>
-                
+
                 <div className={` w-[970px] ${clicked ? "" : "filterne1"}`} >
-                {courses.map(item =>
-                    <div className="h-[166px] border border-t-0 border-l-0 border-r-0 mb-4 pb-4"key={item.id}>
-                        <div className="h-[159px] flex flex-row ">
-                            <div className="mr-4 h-[146px] w-[360px] border">
-                                <img src={item.image} alt="" className="h-[145px] w-[360px]" />
-                            </div>
-                            <div className="h-[159px]  w-full flex flex-row justify-between">
-                                <div className="text-left">
-                                    <h2 className="font-bold ">{item.title}</h2>
-                                    <p className="text-sm">The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!</p>
-                                    <p className="text-sm text-gray-400">{item.username}</p>
-                                    <div className="flex space-x-1">
-                                        <h3 className="text-[#db9b0e] font-bold tex-sm">{item.vote}</h3>
-                                        <div className="flex items-center">
-                                            <StarIcon className="w-4 text-[#db9b0e]" />
-                                            <StarIcon className="w-4 text-[#db9b0e]" />
-                                            <StarIcon className="w-4 text-[#db9b0e]" />
-                                            <StarIcon className="w-4 text-[#db9b0e]" />
-                                            <StarIcon className="w-4 text-[#db9b0e]" />
-                                        </div>
-                                        <h3 className="text-xs">{item.students}</h3>
-                                    </div>
-                                    <p className="text-sm text-gray-400">69 total &middot; hours 320 lectures &middot; All Levels</p>
+                    {courses.map(item =>
+                        <div className="h-[166px] border border-t-0 border-l-0 border-r-0 mb-4 pb-4" key={item.id}>
+                            <div className="h-[159px] flex flex-row ">
+                                <div className="mr-4 h-[146px] w-[360px] border">
+                                    <img src={item.image} alt="" className="h-[145px] w-[360px]" />
                                 </div>
-                                <div className="w-[96px] text-right">
-                                    <h2 className="font-bold ">{item.price}</h2>
-                                    <h3 className="text-gray-800 text-sm line-through">{item.oldPrice}</h3>
+                                <div className="h-[159px]  w-full flex flex-row justify-between">
+                                    <div className="text-left">
+                                        <h2 className="font-bold ">{item.title}</h2>
+                                        <p className="text-sm">The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!</p>
+                                        <p className="text-sm text-gray-400">{item.username}</p>
+                                        <div className="flex space-x-1">
+                                            <h3 className="text-[#db9b0e] font-bold tex-sm">{item.vote}</h3>
+                                            <div className="flex items-center">
+                                                <StarIcon className="w-4 text-[#db9b0e]" />
+                                                <StarIcon className="w-4 text-[#db9b0e]" />
+                                                <StarIcon className="w-4 text-[#db9b0e]" />
+                                                <StarIcon className="w-4 text-[#db9b0e]" />
+                                                <StarIcon className="w-4 text-[#db9b0e]" />
+                                            </div>
+                                            <h3 className="text-xs">{item.students}</h3>
+                                        </div>
+                                        <p className="text-sm text-gray-400">69 total &middot; hours 320 lectures &middot; All Levels</p>
+                                    </div>
+                                    <div className="w-[96px] text-right">
+                                        <h2 className="font-bold ">{item.price}</h2>
+                                        <h3 className="text-gray-800 text-sm line-through">{item.oldPrice}</h3>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                     )}
+                    )}
                 </div>
-               
+
             </div>
         </div>
     )

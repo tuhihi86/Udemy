@@ -5,34 +5,36 @@ import {
     GlobeAltIcon,
     MenuIcon,
 } from "@heroicons/react/outline";
+import {  NavLink } from "react-router-dom";
 function Header() {
     return (
         <div>
             <div className='flex space-x-4 bg-white h-[74px] shadow-lg text-center justify-between items-center px-4'>
                 <MenuIcon className='h-6 w-6 md:hidden' />
                 <button>
-                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png' alt='logo' width='91' height='34'></img>
+                <NavLink to="/"><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Udemy_logo.svg/2560px-Udemy_logo.svg.png' alt='logo' width='91' height='34'/></NavLink>
                 </button>
                 <div>
-                    <button style={{ position: 'relative', width: "110px", height: "72px" }} className='peer bg-white hidden text-sm md:block'><h3 style={{ height: "72px", marginTop: "27px" }} className='hover:text-[#5624d0]'>Categories</h3> </button>
+                    <button  style={{ position: 'relative', width: "110px", height: "72px" }} className='peer bg-white hidden text-sm md:block'><h3 style={{ height: "72px", marginTop: "27px" }} className='hover:text-[#5624d0]'><NavLink to="listcourse">Category</NavLink></h3> </button>
+                    
                     {/* <!-- the menu here --> */}
-                    <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} className="hidden peer-hover:flex hover:flex
+                    {/* <div style={{ position: 'absolute', marginTop: '4px', zIndex: 1010 }} className="hidden peer-hover:flex hover:flex
                     w-[200px] text-left
                     flex-col bg-white drop-shadow-lg">
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Development</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Business</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Finance &#38; Accounting</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">IT &#38; Software</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Office productivity</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Personal Development</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Design</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Marketing</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Lifestyle</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Photography &#38; Video</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Health &#38; Fitness</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Music</a>
-                        <a className="px-5 py-2 hover:text-[#5624d0]" href="#">Teaching &#38; Academics</a>
-                    </div>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Development</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Business</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Finance &#38; Accounting</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">IT &#38; Software</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Office productivity</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Personal Development</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Design</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Marketing</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Lifestyle</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Photography &#38; Video</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Health &#38; Fitness</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Music</a>
+                        <a className="px-5 py-2 hover:text-[#5624d0]" href="/listcourse">Teaching &#38; Academics</a>
+                    </div> */}
                 </div>
                 <form className='hidden bg-[#f8fafb] border md:flex border-black rounded-3xl flex-1 h-12 items-center'>
                     <button>
